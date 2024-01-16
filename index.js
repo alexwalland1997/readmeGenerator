@@ -14,10 +14,11 @@ const questions = [
     message: "What is the name of the project?",
     name: "name",
     default: "Read-me Generator",
-    vaildate: function (response) {
+    validate: function (response) {
       // validates for actual project name of length 5 characters or more
       if (response.length < 5) {
         console.log("\n Please enter a valid project name");
+        return false;
       } else {
         return true;
       }
@@ -29,10 +30,11 @@ const questions = [
     name: "description",
     default:
       "This projects gives prompts to the user and generates a readme based on there responses",
-    vaildate: function (response) {
+    validate: function (response) {
       //ensures user is entering a sufficent description
       if (response.length < 100) {
         console.log("\n A valid project description is required.");
+        return false;
       } else {
         return true;
       }
@@ -42,12 +44,6 @@ const questions = [
     type: "input",
     message:
       "Please advise of any installation instructions required to run your project",
-    name: "installation",
-  },
-  {
-    type: "input",
-    message:
-      "Please advise of any installation instructions required to run your project if applicable",
     name: "installation",
   },
   {
@@ -78,7 +74,7 @@ const questions = [
     message: "Please enter your github username",
     name: "github",
     default: "alexwalland1997",
-    vaildate: function (response) {
+    validate: function (response) {
       //ensures user is a valid github username
       if (response.length < 5) {
         console.log("\n A valid github username is reequired.");
