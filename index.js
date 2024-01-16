@@ -89,8 +89,30 @@ const questions = [
   },
 ];
 
-// function to write README file
-function writeToFile(fileName, data) {}
+// function to write README file - changed to async so it runs only once everything else completed
+function writeToFile(fileName, data) {
+
+}
+
+//function to get license link for license chosen
+async function getLicense(questions) {
+    license = questions.license;
+    switch (license) {
+      case "GNU GPLv3":
+        license =
+          "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
+        break;
+      case "MIT License":
+        license =
+          "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+        break;
+      case "The Unlicense":
+        license =
+          "[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)";
+        break;
+    }
+  }
+  
 
 // function to initialize program
 async function init() {
