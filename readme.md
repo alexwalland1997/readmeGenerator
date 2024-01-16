@@ -12,7 +12,9 @@
   
     This is a project in which I used node.js alongside enquirer to create a simple and efficent program that will generate a readme once I have answered several prompts this can then be used for future projects readmes
 
-    Example video: <video src="./example/example.mp4">
+    https://github.com/alexwalland1997/readmeGenerator/assets/146854684/960c7d33-3332-4a01-951d-934d7e6cbab7
+
+
 
     ## Installation
     *Instructions on how to install the project and run it*
