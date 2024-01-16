@@ -91,7 +91,12 @@ const questions = [
 
 // function to write README file - changed to async so it runs only once everything else completed
 function writeToFile(fileName, data) {
-
+    fs.writeFile(fileName, data, err => {
+        if (err) {
+          return console.log(err);
+        }
+        console.log("Success! Your README.md file has been generated")
+    });
 }
 
 //function to get license link for license chosen
