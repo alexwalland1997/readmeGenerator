@@ -11,7 +11,7 @@ function generateMarkdown(data, license) {
     
     `;
   //create variable for read me and add license badge
-  let gMarkdown = `${license} \ng`;
+  let gMarkdown = `${license} \n`;
   
     gMarkdown +=`# ${data.name} \n`;
   
