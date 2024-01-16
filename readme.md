@@ -15,7 +15,8 @@
     ## Installation
     *Instructions on how to install the project and run it*
   
-      To install the project install the code from github and in terminal run 'npm install' to install any required packages then run 'node \index.js' to run the program## License
+      To install the project install the code from github and in terminal run ``npm install`` to install any required packages then run ``node \index.js`` to run the program
+    ## License
     *The project is protected by the following license*
   
     The Unlicense
